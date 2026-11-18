@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="subpage" id="top">
+<body class="subpage contact-page" id="top">
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header" id="headerNav">
@@ -35,25 +35,29 @@
   </div>
 
   <main class="page-main" id="content">
-    <section class="section section-dark contact">
+    <section class="section contact-section">
       <div class="wrap">
-        <div class="contact-heading">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
-          <h2>Get in touch.</h2>
-        </div>
         <div class="contact-grid">
-          <form id="contact-form">
-            <label class="sr-only" for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Name" required autocomplete="name" />
-            <label class="sr-only" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Email" required autocomplete="email" />
-            <label class="sr-only" for="message">Message</label>
-            <textarea id="message" name="message" rows="6" maxlength="250" placeholder="Message" required></textarea>
-            <button class="btn btn-primary" type="submit">Send Message</button>
-            <p class="form-note" id="form-note" hidden></p>
-          </form>
           <div>
-            <p>The fastest way to reach me is email. I am based in Chandler, Arizona and happy to talk about software, internships, and full-time roles.</p>
+            <div class="contact-heading">
+              <span class="contact-heading-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+              </span>
+              <h1>Get in touch.</h1>
+            </div>
+            <form id="contact-form">
+              <label class="sr-only" for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Name" required autocomplete="name" />
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Email" required autocomplete="email" />
+              <label class="sr-only" for="message">Message</label>
+              <textarea id="message" name="message" rows="6" maxlength="250" placeholder="Message" required></textarea>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <p class="form-note" id="form-note" hidden></p>
+            </form>
+          </div>
+          <div class="contact-aside">
+            <p class="contact-copy">The fastest way to reach me is email. I am based in Chandler, Arizona and happy to talk about software, internships, and full-time roles.</p>
             <ul class="contact-list">
               <li>
                 <a href="mailto:OmarMartinez14@gmail.com">
@@ -98,7 +102,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3.75 6.75h16.5a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75v-9a.75.75 0 0 1 .75-.75Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="m4 7 8 6 8-6"/></svg>
       </a>
     </div>
-    <p class="copyright">© <span id="year"></span> Juventino Martinez</p>
+    <p class="copyright">© <span id="year"></span>. Omar Martinez</p>
   </footer>
 
   <script src="js/site.js"></script>
